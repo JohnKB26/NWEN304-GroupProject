@@ -1,2 +1,2 @@
 # NWEN304-GroupProject
-Online Shopping Appliation
+Online Shopping Application

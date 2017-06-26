@@ -59,7 +59,7 @@ a.cart-link:hover { text-decoration: underline;}
 
 a.bul { background:url(images/bul.gif) no-repeat 0 center; padding-left:10px;}
 
-.search { min-height:130px;}
+.search { min-height:135px;}
 .search label { display:block; padding-bottom:3px; }
 
 .search .field { display:block; margin-bottom:10px; }

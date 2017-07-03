@@ -20,7 +20,7 @@ $(document).ready(function(e) {
     $.ajax({
         method: 'post',
         url: APP_URL + '/search',
-        dataType: 'json',
+        //dataType: 'json',
         data: taskone,
         success: function(data){
             showSearch(data);

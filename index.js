@@ -45,7 +45,7 @@ app.post('/search', function (req, res) {
 
     query.on('end',function() {
         console.log(results.length);
-        res.json(results);
+        res.send(results);
     });
 
 

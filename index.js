@@ -31,6 +31,7 @@ app.use(function (req, res, next) {
 app.post('/search', function (req, res) {
 
     var keyword = req.body.searchBar;
+    console.log(keyword);
 
     var query = client.query("SELECT * FROM collections WHERE LOWER (item_name) LIKE LOWER('%" + keyword + "%');");
     var results = [];

@@ -25,7 +25,7 @@ function search() {
     $.ajax({
         method: 'post',
         url: APP_URL + '/search',
-        //dataType: 'json',
+        dataType: 'json',
         data: taskone,
         success: function(data){
             showSearch(data);

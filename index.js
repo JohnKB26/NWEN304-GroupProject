@@ -44,7 +44,7 @@ app.post('/search', function (req, res) {
     });
 
     query.on('end',function() {
-        console.log(results.length);
+        console.log(results.length + "Slade is gay");
         res.send(results);
     });
 

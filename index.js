@@ -30,7 +30,7 @@ app.use(function (req, res, next) {
 // Get request for search box
 app.post('/search', function (req, res) {
 
-    var keyword = req.body.searchBar;
+    var keyword = req.body.task;
     console.log(keyword);
 
     var query = client.query("SELECT * FROM collections WHERE LOWER (item_name) LIKE LOWER('%" + keyword + "%');");

@@ -56,7 +56,7 @@
 
         <li><a href="Kid.html">Kid's Collection</a></li>
 
-        <li><a href="#">PLACE HOLDER</a></li>
+        <li><a href="Signup.html">Create Account</a></li>
 
       </ul>
 
@@ -112,53 +112,53 @@
 
         <ul>
 
-          <li> <a href="#"><img src="css/images/big1.jpg" alt="" /></a>
+          <li> <a href="#"><img src="css/images/mensshirt3.jpg" alt="" /></a>
 
             <div class="product-info">
 
-              <h3>Example 1</h3>
+              <h3>White button up shirt</h3>
 
               <div class="product-desc">
 
-                <h4>WOMEN’S</h4>
+                <h4>MENS</h4>
 
-                <p>Example text</p>
+                <p>Plain white button up shirt</p>
 
-                <strong class="price">$58.99</strong> </div>
+                <strong class="price">$45.99</strong> </div>
 
             </div>
 
           </li>
 
-          <li> <a href="#"><img src="css/images/big2.jpg" alt="" /></a>
+          <li> <a href="#"><img src="css/images/womensjacket.jpg" alt="" /></a>
 
             <div class="product-info">
 
-              <h3>Example 2</h3>
+              <h3>Womens black leather jacket</h3>
 
               <div class="product-desc">
 
-                <h4>WOMEN’S</h4>
+                <h4>WOMENS</h4>
 
-                <p>Example text</p>
+                <p>Black pleather jacket with silver zip detail</p>
 
-                <strong class="price">$58.99</strong> </div>
+                <strong class="price">$69.99</strong> </div>
 
             </div>
 
           </li>
 
-          <li class="last"> <a href="#"><img src="css/images/big3.jpg" alt="" /></a>
+          <li class="last"> <a href="#"><img src="css/images/mensjacket2.jpg" alt="" /></a>
 
             <div class="product-info">
 
-              <h3>Example 3</h3>
+              <h3>Blue bomber jacket</h3>
 
               <div class="product-desc">
 
-                <h4>WOMEN’S</h4>
+                <h4>MENS</h4>
 
-                <p>Example text</p>
+                <p>Blue bomber jacket with silver zip detail</p>
 
                 <strong class="price">$58.99</strong> </div>
 
@@ -181,6 +181,38 @@
     <!-- Sidebar -->
 
     <div id="sidebar">
+	
+	<!-- Log In -->
+
+      <div class="box login">
+
+        <h2>Log In <span></span></h2>
+
+        <div class="box-content">
+
+          <form action="#" method="post">
+
+            <label>Username</label>
+
+            <input type="text" class="field" placeholder="Enter Username" name="uname" required />
+			
+			<div class="cl">&nbsp;</div>
+			
+			<label>Password</label>
+
+            <input type="text" class="field" placeholder="Enter Password" name="pword" required />
+			
+			<span class="psw"><a href="Signup.html">Create an account</a></span>
+			
+            <input type="submit" class="login-submit" value="Log In" />
+
+          </form>
+
+        </div>
+
+      </div>
+
+      <!-- End Log In -->
 
       <!-- Search -->
 
@@ -190,13 +222,13 @@
 
         <div class="box-content">
 
-          <form action="#" method="post">
+          <form action="/search" method="post">
 
             <label>Keyword</label>
 
-            <input type="text" class="field" />
+            <input type="text" class="field" id="searchBar" name="searchBar" placeholder="Search" maxlength="15" autocomplete="off" onblur="" onmousedown=""/>
 
-            <input type="submit" class="search-submit" value="Search" />
+            <input type="submit" class="search-submit" value="Search"/>
 
           </form>
 

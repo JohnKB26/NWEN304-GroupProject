@@ -20,7 +20,7 @@ function search() {
         task: taskName
     };
 
-    console.log('here 1');
+    console.log('here 1'+ taskone);
 
     $.ajax({
         method: 'post',

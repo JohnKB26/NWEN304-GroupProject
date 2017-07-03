@@ -15,6 +15,10 @@ $(document).ready(function(e) {
         task: taskName
     };
 
+    function handleKey(e){
+        console.log('test');
+    }
+
     console.log('here 1');
 
     $.ajax({

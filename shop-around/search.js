@@ -1,6 +1,7 @@
 /**
  * Created by ntaylor on 27/06/17.
  */
+var APP_URL = "https://nwen304-group-project.herokuapp.com";
 
 function handleKey(e){
     if(e.keyCode == 13){
@@ -51,7 +52,6 @@ function showSearch (row) {
 $(document).ready(function(e) {
 
    // var APP_URL = "http://localhost:8080";
-    var APP_URL = "https://nwen304-group-project.herokuapp.com";
     var error = console.error.bind(console);
 
 

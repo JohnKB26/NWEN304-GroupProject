@@ -28,15 +28,14 @@ $(document).ready(function(e) {
     function showSearch (row) {
         console.log('here');
         console.log(row);
-      //   var i = 0;
-      //   for(i; i<row.length; i++){
-      //       var image = row[i].url;
-      //       var cost = row[i].item_price;
-      //       var description = row[i].item_name;
-      //       var taskHTML = '<span class="searchBar"></span></li>';
+        var i = 0;
+        $('#searchItems').empty();
+        for(i; i<row.length; i++){
+            $('#searchItems').append('<h3>'+row[i].item_name+'</h3>');
+            $('#searchItems').append('<h3>'+row[i].item_price+'</h3>');
+            $('#searchItems').append('<h3>'+row[i].url+'</h3>');
 
-
-        //}
+        }
 
     }
 

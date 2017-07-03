@@ -11,6 +11,8 @@ $(document).ready(function(e) {
 
     taskName = $('#searchBar').val();
 
+    console.log('here 1');
+
     $.ajax({
         method: 'POST',
         url: APP_URL + '/search',

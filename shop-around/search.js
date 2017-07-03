@@ -2,6 +2,10 @@
  * Created by ntaylor on 27/06/17.
  */
 
+function handleKey(e){
+    console.log('test');
+}
+
 $(document).ready(function(e) {
 
    // var APP_URL = "http://localhost:8080";
@@ -14,10 +18,6 @@ $(document).ready(function(e) {
     var taskone = {
         task: taskName
     };
-
-    function handleKey(e){
-        console.log('test');
-    }
 
     console.log('here 1');
 

@@ -21,12 +21,14 @@ $(document).ready(function(e) {
         method: 'post',
         url: APP_URL + '/search',
         dataType: 'json',
-        data: taskone
-
-    }).then(showSearch, error);
+        data: taskone,
+        success: function(data){
+            showSearch(data);
+        }
+    })
 
     function showSearch (row) {
-        window.location = "https://nwen304-group-project.herokuapp.com";
+       // window.location = "https://nwen304-group-project.herokuapp.com";
         console.log('here');
         console.log(row);
         var i = 0;

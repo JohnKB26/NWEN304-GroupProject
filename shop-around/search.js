@@ -5,7 +5,7 @@
 $(document).ready(function(e) {
 
    // var APP_URL = "http://localhost:8080";
-    var APP_URL = "https://agile-river-54036.herokuapp.com";
+    var APP_URL = "https://nwen304-group-project.herokuapp.com";
     var error = console.error.bind(console);
     var taskName;
 

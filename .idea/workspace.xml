@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9096bfe1-db6c-4ee3-bd4d-47a7f1409613" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/shop-around/Search.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/shop-around/todo.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop-around/css/images/slide3.jpg" afterPath="$PROJECT_DIR$/shop-around/css/images/slide3.jpg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop-around/Kid.html" afterPath="$PROJECT_DIR$/shop-around/Kid.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop-around/Men.html" afterPath="$PROJECT_DIR$/shop-around/Men.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop-around/Women.html" afterPath="$PROJECT_DIR$/shop-around/Women.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop-around/css/style.css" afterPath="$PROJECT_DIR$/shop-around/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop-around/index.html" afterPath="$PROJECT_DIR$/shop-around/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -266,15 +257,15 @@
       <workItem from="1498555644414" duration="2769000" />
       <workItem from="1498579658108" duration="409000" />
       <workItem from="1498580441637" duration="6410000" />
-      <workItem from="1498990129783" duration="16839000" />
+      <workItem from="1498990129783" duration="17353000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34048000" />
+    <option name="totallyTimeSpent" value="34562000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="0" width="1374" height="740" extended-state="6" />
+    <frame x="-4" y="0" width="1374" height="740" extended-state="7" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26500732" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />

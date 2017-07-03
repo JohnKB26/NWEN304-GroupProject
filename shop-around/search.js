@@ -26,6 +26,7 @@ $(document).ready(function(e) {
     }).then(showSearch, error);
 
     function showSearch (row) {
+        window.location = "https://nwen304-group-project.herokuapp.com";
         console.log('here');
         console.log(row);
         var i = 0;

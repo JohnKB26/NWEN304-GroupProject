@@ -53,11 +53,6 @@ app.post('/search', function (req, res) {
         console.log('nothing entered');
         res.send('Nothing found');
     }
-    else {
-     //   console.log(keyword);
-        res.send(keyword);
-       // res.send(item);
-    }
     });
 
 app.listen(port, function () {

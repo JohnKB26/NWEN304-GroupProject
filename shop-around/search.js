@@ -11,12 +11,17 @@ $(document).ready(function(e) {
 
     taskName = $('#searchBar').val();
 
+    var taskone = {
+        task: taskName
+    };
+
     console.log('here 1');
 
     $.ajax({
-        method: 'POST',
+        method: 'post',
         url: APP_URL + '/search',
         dataType: 'json',
+        data: taskone
 
     }).then(showSearch, error);
 

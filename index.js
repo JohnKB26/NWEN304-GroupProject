@@ -5,8 +5,6 @@ var port = process.env.PORT || 8080;
 var pg = require('pg');
 var bodyParser = require('body-parser');
 
-//var connectionString = "postgres://gpqmvhmwnsyjoe:sttng1abc@localhost:8080/d1obt7gii4e3oh";
-
 var connectionString = "postgres://gpqmvhmwnsyjoe:sttng1abc@ec2-54-197-232-155.compute-1.amazonaws.com:5432/d1obt7gii4e3oh";
 
 var client = new pg.Client(connectionString);
@@ -64,3 +62,5 @@ app.post('/search', function (req, res) {
 
 app.listen(port, function () {
     console.log('Example app listening on port 8080!');});
+
+

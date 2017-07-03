@@ -54,7 +54,7 @@ app.post('/search', function (req, res) {
         res.send('Nothing found');
     }
     else {
-        console.log(keyword);
+     //   console.log(keyword);
         res.send(keyword);
        // res.send(item);
     }

@@ -19,6 +19,7 @@ $(document).ready(function(e) {
     }).then(showSearch, error);
 
     function showSearch (row) {
+        console.log('here');
         console.log(row);
       //   var i = 0;
       //   for(i; i<row.length; i++){

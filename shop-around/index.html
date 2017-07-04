@@ -18,6 +18,8 @@
 
 <script src="js/jquery-func.js" type="text/javascript"></script>
 
+  <script src="/search.js" type="text/javascript"></script>
+
 </head>
 
 <body>
@@ -216,19 +218,21 @@
 
       <!-- Search -->
 
+
+
       <div class="box search">
 
         <h2>Search by <span></span></h2>
 
         <div class="box-content">
 
-          <form action="#" method="post">
+          <form>
 
             <label>Keyword</label>
 
-            <input type="text" class="field" />
+            <input type="text" class="field" onkeyup="handleKey(event)" id="searchBar" name="searchBar" placeholder="Search" maxlength="15" autocomplete="off" onblur="" onmousedown=""/>
 
-            <input type="submit" class="search-submit" value="Search" />
+            <input type="submit" class="search-submit" value="Search"/>
 
           </form>
 
@@ -245,7 +249,7 @@
     <div class="cl">&nbsp;</div>
 
   </div>
-
+  <div id = "searchItems"></div>
   <!-- End Main -->
 
   <!-- Side Full -->

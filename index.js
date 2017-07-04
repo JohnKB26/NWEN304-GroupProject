@@ -23,7 +23,16 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname + '/shop-around/')));
 
+app.use(function(req, res, next){
+    if (!req.headers.host.startsWith("localhost") && req.headers['x-forwarded-proto'] !== 'https') {
 
+        let httpsUrl = ['https://nwen304-group-project.herokuapp.com/', res.url].join('');
+        return res.redirect(httpsUrl);
+
+    }
+    return next();
+
+});
 
 // Add headers
 app.use(function (req, res, next) {
@@ -35,13 +44,6 @@ app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers');
     // Pass to next layer of middleware
 
-    if (!req.headers.host.startsWith("localhost") && req.headers['x-forwarded-proto'] !== 'https') {
-
-        let httpsUrl = ['https://nwen304-group-project.herokuapp.com/', res.url].join('');
-        return res.redirect(httpsUrl);
-
-    }
-    return next();
 });
 
 require('./routes/search.js')(app,connectionPool);

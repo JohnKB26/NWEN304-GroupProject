@@ -36,7 +36,7 @@ function search() {
 
 function showSearch (row) {
     // window.location = "https://nwen304-group-project.herokuapp.com";
-    console.log(JSON.stringify(row));
+   // console.log(JSON.stringify(row));
     console.log(row);
     var i = 0;
     $('#searchItems').empty();

@@ -23,15 +23,20 @@ app.use(bodyParser.json());
 
 app.use(express.static(path.join(__dirname + '/shop-around/')));
 
+
+//force http to https
 app.use(function(req, res, next){
+
+    console.log(req.headers.host);
+
     if (!req.headers.host.startsWith("localhost") && req.headers['x-forwarded-proto'] !== 'https') {
+
 
         let httpsUrl = ['https://nwen304-group-project.herokuapp.com/', res.url].join('');
         return res.redirect(httpsUrl);
 
     }
     return next();
-
 });
 
 // Add headers
@@ -43,6 +48,7 @@ app.use(function (req, res, next) {
     // Request headers you wish to allow ,
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers');
     // Pass to next layer of middleware
+    next();
 
 });
 

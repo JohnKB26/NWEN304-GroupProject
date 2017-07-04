@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var port = process.env.PORT || 8080;
+var port = process.env.PORT || 8108;
 var pg = require('pg');
 var bodyParser = require('body-parser');
 var morgan = require('morgan');
@@ -24,21 +24,6 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname + '/shop-around/')));
 
 
-//force http to https
-app.use(function(req, res, next){
-
-    console.log(req.headers.host);
-
-    if (!req.headers.host.startsWith("localhost") && req.headers['x-forwarded-proto'] !== 'https') {
-
-
-        let httpsUrl = ['https://nwen304-group-project.herokuapp.com/', res.url].join('');
-        return res.redirect(httpsUrl);
-
-    }
-    return next();
-});
-
 // Add headers
 app.use(function (req, res, next) {
     // Website you wish to allow to connect
@@ -49,7 +34,6 @@ app.use(function (req, res, next) {
     res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Access-Control-Allow-Headers');
     // Pass to next layer of middleware
     next();
-
 });
 
 require('./routes/search.js')(app,connectionPool);

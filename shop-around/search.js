@@ -4,6 +4,7 @@
 
 function handleKey(e){
     if(e.keyCode == 13){
+        e.preventDefault();
         search();
     }
     console.log('test');

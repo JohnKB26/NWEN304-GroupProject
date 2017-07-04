@@ -1,7 +1,6 @@
 /**
  * Created by ntaylor on 27/06/17.
  */
-var APP_URL = "https://nwen304-group-project.herokuapp.com";
 
 function handleKey(e){
     if(e.keyCode == 13){
@@ -23,11 +22,13 @@ function search() {
     console.log(taskone);
 
     $.ajax({
-        method: 'post',
-        url: APP_URL + '/search',
+        type: "POST",
+        url: '/search',
         dataType: 'json',
-        data: taskone,
+        data:taskone,
+        async : false,
         success: function(data){
+            //alert(JSON.stringify(data));
             showSearch(data);
         }
     })
@@ -47,12 +48,13 @@ function showSearch (row) {
 
     }
 
+    $('#searchItems').show;
+
 }
-
-$(document).ready(function(e) {
-
-   // var APP_URL = "http://localhost:8080";
-    var error = console.error.bind(console);
-
-
-});
+//
+// $(document).ready(function(e) {
+//
+//    // var APP_URL = "http://localhost:8080";
+//    // var error = console.error.bind(console);
+//
+// });

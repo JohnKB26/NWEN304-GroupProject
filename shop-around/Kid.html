@@ -18,6 +18,32 @@
 
 <script src="js/jquery-func.js" type="text/javascript"></script>
 
+  <script>function searchKids() {
+
+      var taskName;
+
+      taskName = $('#searchBar').val();
+
+      var taskone = {
+          task: taskName
+      };
+
+      console.log(taskone);
+
+      $.ajax({
+          type: "POST",
+          url: '/search_kids',
+          dataType: 'json',
+          data:taskone,
+          async : false,
+          success: function(data){
+              alert(JSON.stringify(data));
+              //showSearch(data);
+          }
+      })
+
+  }</script>
+
 </head>
 
 <body>
@@ -164,13 +190,13 @@
 
         <div class="box-content">
 
-          <form action="#" method="post">
+          <form>
 
             <label>Keyword</label>
 
-            <input type="text" class="field" />
+            <input type="text" class="field" onkeyup="handleKey(event)" id="searchBar" name="searchBar" placeholder="Search" maxlength="15" autocomplete="off" onblur="" onmousedown=""/>
 
-            <input type="submit" class="search-submit" value="Search" />
+            <button  type="button" id="searchButton" class="button" value="Search" onclick="searchKids()">Submit</button>
 
           </form>
 

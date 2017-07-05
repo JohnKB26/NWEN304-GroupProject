@@ -1,0 +1,13 @@
+
+
+curl -X GET http://localhost:8110
+
+curl -X GET http://localhost:8110/Women.html
+
+curl -X GET http://localhost:8110/Men.html
+
+curl -X GET http://localhost:8110/Kid.html
+
+curl -X GET http://localhost:8110/Signup.html
+
+curl -H "Content-Type:application/json" -X POST -d '{"task":"blue"}' https://localhost:8019/search

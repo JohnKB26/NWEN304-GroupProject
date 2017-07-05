@@ -25,4 +25,3 @@ http://g.nordstromimage.com/ImageGallery/store/product/Zoom/13/_10340493.jpg
 Mens jacket:
 http://g.nordstromimage.com/ImageGallery/store/product/Zoom/15/_10169695.jpg
 
-curl -H "Content-Type:application/json" -X POST -d '{"task":"blue"}' https://localhost:8019/search
